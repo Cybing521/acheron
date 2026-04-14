@@ -55,6 +55,12 @@ For a reproducible startup smoke test that auto-quits after a short delay:
 ./tools/run_smoke_qt_app.sh acheron
 ```
 
+For a non-GUI backend smoke test that validates the Acheron dispatcher/connectivity lifecycle:
+
+```bash
+./.conda-recovered/bin/python tools/smoke_acheron_backend.py
+```
+
 ## Runtime Assets
 
 The original installers ship a few non-Python runtime assets that are not embedded in the recovered source tree:

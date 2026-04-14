@@ -353,53 +353,13 @@ class ModbusDeviceMapping:
 class ModbusSlave(IModbusSlaveContext):
 
     def __init__(self):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 COPY_FREE_VARS
-        #    2 RESUME
-        #    4 LOAD_GLOBAL NULL + super
-        #   16 PRECALL
-        #   20 CALL
-        #   30 LOAD_METHOD __init__
-        #   52 PRECALL
-        #   56 CALL
-        #   66 POP_TOP
-        #   68 LOAD_GLOBAL NULL + struct
-        #   80 LOAD_ATTR Struct
-        #   90 LOAD_CONST '<f'
-        #   92 PRECALL
-        #   96 CALL
-        #  106 LOAD_FAST self
-        #  108 STORE_ATTR float_encoder
-        #  118 LOAD_GLOBAL NULL + struct
-        #  130 LOAD_ATTR Struct
-        #  140 LOAD_CONST '<i'
-        #  142 PRECALL
-        #  146 CALL
-        #  156 LOAD_FAST self
-        #  158 STORE_ATTR int_encoder
-        #  168 LOAD_GLOBAL NULL + struct
-        #  180 LOAD_ATTR Struct
-        #  190 LOAD_CONST '<HH'
-        #  192 PRECALL
-        #  196 CALL
-        #  206 LOAD_FAST self
-        #  208 STORE_ATTR decoder
-        #  218 BUILD_MAP
-        #  220 LOAD_FAST self
-        #  222 STORE_ATTR device_mappings
-        #  232 BUILD_MAP
-        #  234 LOAD_FAST self
-        #  236 STORE_ATTR device_intervals
-        #  246 LOAD_GLOBAL NULL + IntervalTree
-        #  258 PRECALL
-        #  262 CALL
-        #  272 LOAD_FAST self
-        #  274 STORE_ATTR interval_tree
-        #  284 LOAD_CONST None
-        #  286 RETURN_VALUE
-        pass
+        super().__init__()
+        self.float_encoder = struct.Struct('<f')
+        self.int_encoder = struct.Struct('<i')
+        self.decoder = struct.Struct('<HH')
+        self.device_mappings = {}
+        self.device_intervals = {}
+        self.interval_tree = IntervalTree()
 
     def add_device_mapping(self, serial_number, register_offset, device_mapping):
         self.remove_device_mapping(serial_number)
@@ -558,91 +518,23 @@ class ModbusSlave(IModbusSlaveContext):
 class ModbusHandler:
 
     def __init__(self, preferences):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 COPY_FREE_VARS
-        #    2 RESUME
-        #    4 LOAD_GLOBAL NULL + super
-        #   16 PRECALL
-        #   20 CALL
-        #   30 LOAD_METHOD __init__
-        #   52 PRECALL
-        #   56 CALL
-        #   66 POP_TOP
-        #   68 LOAD_FAST preferences
-        #   70 LOAD_FAST self
-        #   72 STORE_ATTR preferences
-        #   82 LOAD_CONST False
-        #   84 LOAD_FAST self
-        #   86 STORE_ATTR stopped
-        #   96 LOAD_GLOBAL NULL + ModbusDeviceIdentification
-        #  108 PRECALL
-        #  112 CALL
-        #  122 LOAD_FAST self
-        #  124 STORE_ATTR identity
-        #  134 LOAD_GLOBAL QtCore
-        #  146 LOAD_ATTR QCoreApplication
-        #  156 LOAD_METHOD instance
-        #  178 PRECALL
-        #  182 CALL
-        #  192 STORE_FAST app
-        #  194 LOAD_FAST app
-        #  196 POP_JUMP_FORWARD_IF_NONE to 558
-        #  198 LOAD_FAST app
-        #  200 LOAD_METHOD organizationName
-        #  222 PRECALL
-        #  226 CALL
-        #  236 LOAD_FAST self
-        #  238 LOAD_ATTR identity
-        #  248 STORE_ATTR VendorName
-        #  258 LOAD_FAST app
-        #  260 LOAD_METHOD applicationName
-        #  282 PRECALL
-        #  286 CALL
-        #  296 LOAD_FAST self
-        #  298 LOAD_ATTR identity
-        #  308 STORE_ATTR ProductCode
-        #  318 LOAD_FAST app
-        #  320 LOAD_METHOD organizationDomain
-        #  342 PRECALL
-        #  346 CALL
-        #  356 LOAD_FAST self
-        #  358 LOAD_ATTR identity
-        #  368 STORE_ATTR VendorUrl
-        #  378 LOAD_FAST app
-        #  380 LOAD_METHOD applicationName
-        #  402 PRECALL
-        #  406 CALL
-        #  416 LOAD_FAST self
-        #  418 LOAD_ATTR identity
-        #  428 STORE_ATTR ProductName
-        #  438 LOAD_FAST app
-        #  440 LOAD_METHOD applicationName
-        #  462 PRECALL
-        #  466 CALL
-        #  476 LOAD_FAST self
-        #  478 LOAD_ATTR identity
-        #  488 STORE_ATTR ModelName
-        #  498 LOAD_FAST app
-        #  500 LOAD_METHOD applicationVersion
-        #  522 PRECALL
-        #  526 CALL
-        #  536 LOAD_FAST self
-        #  538 LOAD_ATTR identity
-        #  548 STORE_ATTR MajorMinorRevision
-        #  558 LOAD_GLOBAL NULL + ModbusSlave
-        #  570 PRECALL
-        #  574 CALL
-        #  584 LOAD_FAST self
-        #  586 STORE_ATTR slave
-        #  596 LOAD_GLOBAL NULL + ModbusServerContext
-        #  608 LOAD_FAST self
-        #  610 LOAD_ATTR slave
-        #  620 LOAD_CONST True
-        #  622 KW_NAMES
-        # ... bytecode truncated ...
-        pass
+        self.preferences = preferences
+        self.stopped = False
+        self.identity = ModbusDeviceIdentification()
+        app = QtCore.QCoreApplication.instance()
+        if app is not None:
+            self.identity.VendorName = app.organizationName()
+            self.identity.ProductCode = app.applicationName()
+            self.identity.VendorUrl = app.organizationDomain()
+            self.identity.ProductName = app.applicationName()
+            self.identity.ModelName = app.applicationName()
+            self.identity.MajorMinorRevision = app.applicationVersion()
+        self.slave = ModbusSlave()
+        self.context = ModbusServerContext(slaves=self.slave, single=True)
+        self.modbus_server = None
+        self.modbus_started = threading.Event()
+        self.thread = None
+        self.update_preferences()
 
     def stop(self):
         self.stopped = True
@@ -717,6 +609,11 @@ class ModbusHandler:
         if self.stopped:
             return None
         address = (None, self.preferences.modbus_port)
+        if not self.preferences.modbus_enable:
+            self._stop_modbus()
+            return None
+        self._start_modbus(address)
+        return None
 
     def _start_modbus(self, address):
         # TODO: pycdc could not reconstruct this body.

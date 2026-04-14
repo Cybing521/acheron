@@ -81,69 +81,32 @@ class ConnectivityManager:
         self.handlers.append(handler)
 
     def stop(self):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 RESUME
-        #    2 LOAD_CONST True
-        #    4 LOAD_FAST self
-        #    6 STORE_ATTR stopped
-        #   16 LOAD_FAST self
-        #   18 LOAD_ATTR handlers
-        #   28 GET_ITER
-        #   30 FOR_ITER to 76
-        #   32 STORE_FAST handler
-        #   34 LOAD_FAST handler
-        #   36 LOAD_METHOD stop
-        #   58 PRECALL
-        #   62 CALL
-        #   72 POP_TOP
-        #   74 JUMP_BACKWARD to 30
-        #   76 LOAD_FAST self
-        #   78 LOAD_ATTR pipe_lock
-        #   88 BEFORE_WITH
-        #   90 POP_TOP
-        #   92 LOAD_FAST self
-        #   94 LOAD_ATTR device_pipes
-        #  104 LOAD_METHOD clear
-        #  126 PRECALL
-        #  130 CALL
-        #  140 POP_TOP
-        #  142 LOAD_FAST self
-        #  144 LOAD_ATTR pipe_callbacks
-        #  154 LOAD_METHOD clear
-        #  176 PRECALL
-        #  180 CALL
-        #  190 POP_TOP
-        #  192 LOAD_CONST None
-        #  194 LOAD_CONST None
-        #  196 LOAD_CONST None
-        #  198 PRECALL
-        #  202 CALL
-        #  212 POP_TOP
-        #  214 LOAD_CONST None
-        #  216 RETURN_VALUE
-        #  218 PUSH_EXC_INFO
-        #  220 WITH_EXCEPT_START
-        #  222 POP_JUMP_FORWARD_IF_TRUE to 232
-        #  224 RERAISE
-        #  226 COPY
-        #  228 POP_EXCEPT
-        #  230 RERAISE
-        #  232 POP_TOP
-        #  234 POP_EXCEPT
-        #  236 POP_TOP
-        #  238 POP_TOP
-        #  240 LOAD_CONST None
-        #  242 RETURN_VALUE
-        pass
+        self.stopped = True
+        self.pipe_thread_finished.set()
+        for handler in self.handlers:
+            try:
+                handler.stop()
+            except Exception:
+                logger.exception('Error stopping connectivity handler')
+        with self.pipe_lock:
+            pipes = list(self.all_pipes)
+            self.all_pipes.clear()
+            self.device_pipes.clear()
+            self.pipe_callbacks.clear()
+        for pipe in pipes:
+            try:
+                pipe.close()
+            except Exception:
+                continue
+        return None
 
     def join(self):
         for handler in self.handlers:
             handler.join()
-            self.pipe_thread_finished.set()
+        self.pipe_thread_finished.set()
+        if self.pipe_thread.ident is not None:
             self.pipe_thread.join()
-            return None
+        return None
 
     def create_device_pipe(self, serial_number, channel_info):
         self.stop_device(serial_number)
@@ -152,8 +115,22 @@ class ConnectivityManager:
         callbacks = None
 
     def stop_device(self, serial_number):
-        self.pipe_lock
-        pipe = self.device_pipes.pop(serial_number, None)
+        with self.pipe_lock:
+            pipe = self.device_pipes.pop(serial_number, None)
+            if pipe is not None:
+                self.all_pipes.discard(pipe)
+                self.pipe_callbacks.pop(pipe, None)
+        for handler in self.handlers:
+            try:
+                handler.stop_device(serial_number)
+            except Exception:
+                logger.exception('Error stopping connectivity device %s', serial_number)
+        if pipe is not None:
+            try:
+                pipe.close()
+            except Exception:
+                pass
+        return None
 
     def update_preferences(self):
         # TODO: pycdc could not reconstruct this body.
@@ -183,11 +160,11 @@ class ConnectivityManager:
     def _remove_pipe(self, pipe):
         self.all_pipes.discard(pipe)
         self.pipe_callbacks.pop(pipe, None)
-        for serial_number, other_pipe in self.device_pipes.items():
+        for serial_number, other_pipe in list(self.device_pipes.items()):
             if pipe == other_pipe:
                 del self.device_pipes[serial_number]
                 return None
-            return None
+        return None
 
     def _pipe_loop(self):
         # TODO: pycdc could not reconstruct this body.

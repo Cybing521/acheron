@@ -35,6 +35,7 @@
 ./tools/run_recovered_app.sh acheron --probe-import
 ./tools/run_smoke_qt_app.sh mondo
 ./tools/run_smoke_qt_app.sh acheron
+./.conda-recovered/bin/python tools/smoke_acheron_backend.py
 ```
 
 也可以继续使用手动环境方式。建议使用 `Python 3.11`。
