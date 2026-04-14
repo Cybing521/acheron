@@ -1,0 +1,16 @@
+# Source Generated with Decompyle++
+# File: tmptdagv761.marshal (Python 3.11)
+
+PSDOptionsWidget.setWindowTitle(QCoreApplication.translate('PSDOptionsWidget', 'PSD Options', None))
+self.fftPointsLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'FFT Window Size', None))
+self.durationLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'Window Duration', None))
+self.duration.setText(QCoreApplication.translate('PSDOptionsWidget', '600 s', None))
+self.resolutionLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'Frequency Resolution', None))
+self.resolution.setText(QCoreApplication.translate('PSDOptionsWidget', '0.1 Hz', None))
+self.overlapPercentLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'Window Overlap Percent', None))
+self.overlapPercent.setSuffix(QCoreApplication.translate('PSDOptionsWidget', ' %', None))
+self.overlapPointsLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'Window Overlap Points', None))
+self.windowCountLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'Number of Windows', None))
+self.windowCount.setText(QCoreApplication.translate('PSDOptionsWidget', '1', None))
+self.windowFunctionLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'Window Function', None))
+self.detrendMethodLabel.setText(QCoreApplication.translate('PSDOptionsWidget', 'Detrend Method', None))

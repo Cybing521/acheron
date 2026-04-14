@@ -1,0 +1,1424 @@
+[
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/__init__",
+    "source_size": 1857,
+    "snippet_count": 5,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/build_info.pyc",
+    "source_path": "recovered/src/acheron/acheron/build_info.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/build_info",
+    "source_size": 1127,
+    "snippet_count": 6,
+    "stderr": "Warning: Stack history is not empty!\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/calc_process/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/calc_process/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/calc_process/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/calc_process/remote.pyc",
+    "source_path": "recovered/src/acheron/acheron/calc_process/remote.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/calc_process/remote",
+    "source_size": 15587,
+    "snippet_count": 32,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: POP_JUMP_BACKWARD_IF_TRUE (235)\nUnsupported opcode: RETURN_GENERATOR (109)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nSomething TERRIBLE happened!\nSomething TERRIBLE happened!\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: DICT_MERGE (213)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/calc_process/runnner.pyc",
+    "source_path": "recovered/src/acheron/acheron/calc_process/runnner.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/calc_process/runnner",
+    "source_size": 613,
+    "snippet_count": 19,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/calc_process/types.pyc",
+    "source_path": "recovered/src/acheron/acheron/calc_process/types.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/calc_process/types",
+    "source_size": 350,
+    "snippet_count": 7,
+    "stderr": "Unsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/connectivity/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/connectivity/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/connectivity/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/connectivity/alert_emailer.pyc",
+    "source_path": "recovered/src/acheron/acheron/connectivity/alert_emailer.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/connectivity/alert_emailer",
+    "source_size": 2616,
+    "snippet_count": 16,
+    "stderr": "Unsupported Node type: 12\nUnsupported Node type: 12\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/connectivity/connectivity_manager.pyc",
+    "source_path": "recovered/src/acheron/acheron/connectivity/connectivity_manager.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/connectivity/connectivity_manager",
+    "source_size": 3044,
+    "snippet_count": 17,
+    "stderr": "Warning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/connectivity/event_upload.pyc",
+    "source_path": "recovered/src/acheron/acheron/connectivity/event_upload.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/connectivity/event_upload",
+    "source_size": 2131,
+    "snippet_count": 10,
+    "stderr": "Unsupported Node type: 12\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: POP_JUMP_BACKWARD_IF_FALSE (234)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/connectivity/modbus.pyc",
+    "source_path": "recovered/src/acheron/acheron/connectivity/modbus.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/connectivity/modbus",
+    "source_size": 5529,
+    "snippet_count": 34,
+    "stderr": "Warning: block stack is not empty!\nWarning: block stack is not empty!\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/connectivity/s3upload.pyc",
+    "source_path": "recovered/src/acheron/acheron/connectivity/s3upload.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/connectivity/s3upload",
+    "source_size": 1917,
+    "snippet_count": 22,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/connectivity/socket_handler.pyc",
+    "source_path": "recovered/src/acheron/acheron/connectivity/socket_handler.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/connectivity/socket_handler",
+    "source_size": 0,
+    "snippet_count": 15,
+    "stderr": "Warning: block stack is not empty!\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/__main__.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/__main__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/__main__",
+    "source_size": 2089,
+    "snippet_count": 3,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/calibration.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/calibration.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/calibration",
+    "source_size": 2854,
+    "snippet_count": 3,
+    "stderr": "Warning: block stack is not empty!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/device_controller.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/device_controller.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/device_controller",
+    "source_size": 1655,
+    "snippet_count": 76,
+    "stderr": "Unsupported Node type: 12\nUnsupported Node type: 12\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/dispatcher.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/dispatcher.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/dispatcher",
+    "source_size": 1316,
+    "snippet_count": 47,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/main_schedule.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/main_schedule.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/main_schedule",
+    "source_size": 419,
+    "snippet_count": 15,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/preferences.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/preferences.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/preferences",
+    "source_size": 10045,
+    "snippet_count": 35,
+    "stderr": "Warning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/radio_scan.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/radio_scan.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/radio_scan",
+    "source_size": 535,
+    "snippet_count": 12,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/core/update_func_limiter.pyc",
+    "source_path": "recovered/src/acheron/acheron/core/update_func_limiter.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/core/update_func_limiter",
+    "source_size": 857,
+    "snippet_count": 5,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_logging.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_logging.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_logging",
+    "source_size": 710,
+    "snippet_count": 9,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/bootloader.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/bootloader.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/bootloader",
+    "source_size": 4818,
+    "snippet_count": 10,
+    "stderr": "Warning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: RETURN_GENERATOR (109)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/compressor.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/compressor.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/compressor",
+    "source_size": 2637,
+    "snippet_count": 8,
+    "stderr": "Unsupported Node type: 12\nWarning: block stack is not empty!\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nSomething TERRIBLE happened!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/hardware_test_funcs.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/hardware_test_funcs.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/hardware_test_funcs",
+    "source_size": 1783,
+    "snippet_count": 6,
+    "stderr": "Something TERRIBLE happened!\nSomething TERRIBLE happened!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/proxy.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/proxy.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/proxy",
+    "source_size": 2220,
+    "snippet_count": 29,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nSomething TERRIBLE happened!\nUnsupported argument found for LIST_EXTEND\nUnsupported opcode: LIST_TO_TUPLE (102)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/proxy_remote.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/proxy_remote.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/proxy_remote",
+    "source_size": 4058,
+    "snippet_count": 12,
+    "stderr": "Unsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nUnsupported argument found for LIST_EXTEND\nUnsupported opcode: LIST_TO_TUPLE (102)\nWarning: block stack is not empty!\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported argument found for LIST_EXTEND\nUnsupported opcode: LIST_TO_TUPLE (102)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/remote_funcs.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/remote_funcs.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/remote_funcs",
+    "source_size": 190,
+    "snippet_count": 5,
+    "stderr": "PycBuffer::getByte(): Unexpected end of stream\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/rgb_manager.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/rgb_manager.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/rgb_manager",
+    "source_size": 2169,
+    "snippet_count": 10,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/schedule.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/schedule.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/schedule",
+    "source_size": 4764,
+    "snippet_count": 36,
+    "stderr": "Unsupported Node type: 12\nUnsupported Node type: 12\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/stream_controller.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/stream_controller.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/stream_controller",
+    "source_size": 0,
+    "snippet_count": 82,
+    "stderr": "Unsupported argument found for LIST_EXTEND\nUnsupported opcode: LIST_TO_TUPLE (102)\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported Node type: 12\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/device_process/writer.pyc",
+    "source_path": "recovered/src/acheron/acheron/device_process/writer.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/device_process/writer",
+    "source_size": 14855,
+    "snippet_count": 26,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: POP_JUMP_BACKWARD_IF_TRUE (235)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/disk/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/disk/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/disk/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/disk/disk_schedule.pyc",
+    "source_path": "recovered/src/acheron/acheron/disk/disk_schedule.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/disk/disk_schedule",
+    "source_size": 3589,
+    "snippet_count": 14,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: DICT_MERGE (213)\nUnsupported Node type: 27\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/disk/disk_trigger.pyc",
+    "source_path": "recovered/src/acheron/acheron/disk/disk_trigger.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/disk/disk_trigger",
+    "source_size": 1184,
+    "snippet_count": 6,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: DICT_MERGE (213)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/disk/schedule_reader.pyc",
+    "source_path": "recovered/src/acheron/acheron/disk/schedule_reader.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/disk/schedule_reader",
+    "source_size": 848,
+    "snippet_count": 17,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/__main__.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/__main__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/__main__",
+    "source_size": 2681,
+    "snippet_count": 2,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/about.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/about.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/about",
+    "source_size": 383,
+    "snippet_count": 6,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/acheron_rc.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/acheron_rc.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/acheron_rc",
+    "source_size": 6907357,
+    "snippet_count": 3,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/calibration.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/calibration.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/calibration",
+    "source_size": 1212,
+    "snippet_count": 26,
+    "stderr": "Unsupported Node type: 12\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/change_stream_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/change_stream_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/change_stream_dialog",
+    "source_size": 382,
+    "snippet_count": 5,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/connectivity_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/connectivity_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/connectivity_dialog",
+    "source_size": 680,
+    "snippet_count": 9,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ctrl_var_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ctrl_var_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ctrl_var_panel",
+    "source_size": 338,
+    "snippet_count": 5,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ctrl_var_widget.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ctrl_var_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ctrl_var_widget",
+    "source_size": 497,
+    "snippet_count": 7,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/device_tab.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/device_tab.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/device_tab",
+    "source_size": 2260,
+    "snippet_count": 87,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/download_firmware_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/download_firmware_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/download_firmware_dialog",
+    "source_size": 399,
+    "snippet_count": 8,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/edit_alert_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/edit_alert_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/edit_alert_dialog",
+    "source_size": 420,
+    "snippet_count": 5,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/gui_log.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/gui_log.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/gui_log",
+    "source_size": 781,
+    "snippet_count": 12,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/hardware_tests.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/hardware_tests.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/hardware_tests",
+    "source_size": 885,
+    "snippet_count": 12,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/led_control_widget.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/led_control_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/led_control_widget",
+    "source_size": 429,
+    "snippet_count": 6,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/plotmain.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/plotmain.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/plotmain",
+    "source_size": 1245,
+    "snippet_count": 73,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/preferences_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/preferences_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/preferences_dialog",
+    "source_size": 493,
+    "snippet_count": 9,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/radio_detail_scan.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/radio_detail_scan.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/radio_detail_scan",
+    "source_size": 825,
+    "snippet_count": 23,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported Node type: 12\nUnsupported Node type: 12\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/radio_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/radio_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/radio_panel",
+    "source_size": 705,
+    "snippet_count": 30,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/remote_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/remote_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/remote_panel",
+    "source_size": 346,
+    "snippet_count": 3,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/rf_power_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/rf_power_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/rf_power_panel",
+    "source_size": 385,
+    "snippet_count": 6,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/rf_test_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/rf_test_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/rf_test_dialog",
+    "source_size": 433,
+    "snippet_count": 7,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/rgb_control_widget.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/rgb_control_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/rgb_control_widget",
+    "source_size": 429,
+    "snippet_count": 15,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/setting_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/setting_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/setting_dialog",
+    "source_size": 443,
+    "snippet_count": 6,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/tcp_connect_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/tcp_connect_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/tcp_connect_dialog",
+    "source_size": 369,
+    "snippet_count": 8,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/tcp_scan_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/tcp_scan_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/tcp_scan_dialog",
+    "source_size": 938,
+    "snippet_count": 18,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/__init__.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_about.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_about.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_about",
+    "source_size": 5199,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_calibration_channel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_calibration_channel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_calibration_channel",
+    "source_size": 11301,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_calibration_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_calibration_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_calibration_panel",
+    "source_size": 1495,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_change_stream_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_change_stream_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_change_stream_dialog",
+    "source_size": 1806,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_connectivity_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_connectivity_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_connectivity_dialog",
+    "source_size": 6091,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_ctrl_var_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_ctrl_var_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_ctrl_var_panel",
+    "source_size": 1525,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_ctrl_var_widget.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_ctrl_var_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_ctrl_var_widget",
+    "source_size": 1660,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_detail_scan_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_detail_scan_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_detail_scan_dialog",
+    "source_size": 6851,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_device_tab.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_device_tab.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_device_tab",
+    "source_size": 33950,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_download_firmware_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_download_firmware_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_download_firmware_dialog",
+    "source_size": 5848,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_edit_alert_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_edit_alert_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_edit_alert_dialog",
+    "source_size": 4284,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_hardware_tests.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_hardware_tests.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_hardware_tests",
+    "source_size": 1929,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_led_control_widget.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_led_control_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_led_control_widget",
+    "source_size": 1874,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_plotmain.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_plotmain.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_plotmain",
+    "source_size": 18131,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_preferences_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_preferences_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_preferences_dialog",
+    "source_size": 28273,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_radio_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_radio_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_radio_panel",
+    "source_size": 4800,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_remote_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_remote_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_remote_panel",
+    "source_size": 1646,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_rf_power_panel.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_rf_power_panel.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_rf_power_panel",
+    "source_size": 2068,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_rf_test_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_rf_test_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_rf_test_dialog",
+    "source_size": 12137,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_rgb_control_widget.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_rgb_control_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_rgb_control_widget",
+    "source_size": 8960,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_setting_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_setting_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_setting_dialog",
+    "source_size": 1755,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_tcp_connect_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_tcp_connect_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_tcp_connect_dialog",
+    "source_size": 3367,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/gui/ui/ui_tcp_scan_dialog.pyc",
+    "source_path": "recovered/src/acheron/acheron/gui/ui/ui_tcp_scan_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/gui/ui/ui_tcp_scan_dialog",
+    "source_size": 5788,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/logging.pyc",
+    "source_path": "recovered/src/acheron/acheron/logging.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/logging",
+    "source_size": 3983,
+    "snippet_count": 7,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/acheron/version.pyc",
+    "source_path": "recovered/src/acheron/acheron/version.py",
+    "snippet_dir": "recovered/snippets/acheron/acheron/version",
+    "source_size": 115,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/asphodel/__init__.pyc",
+    "source_path": "recovered/src/acheron/asphodel/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/asphodel/__init__",
+    "source_size": 87389,
+    "snippet_count": 340,
+    "stderr": "Warning: block stack is not empty!\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nSomething TERRIBLE happened!\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/asphodel/device_config.pyc",
+    "source_path": "recovered/src/acheron/asphodel/device_config.py",
+    "snippet_dir": "recovered/snippets/acheron/asphodel/device_config",
+    "source_size": 8142,
+    "snippet_count": 6,
+    "stderr": "Warning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported argument found for LIST_EXTEND\nUnsupported opcode: LIST_TO_TUPLE (102)\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/asphodel/device_info.pyc",
+    "source_path": "recovered/src/acheron/asphodel/device_info.py",
+    "snippet_dir": "recovered/snippets/acheron/asphodel/device_info",
+    "source_size": 8425,
+    "snippet_count": 51,
+    "stderr": "Unsupported Node type: 12\nUnsupported Node type: 12\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: DICT_MERGE (213)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/asphodel/streamutil.pyc",
+    "source_path": "recovered/src/acheron/asphodel/streamutil.py",
+    "snippet_dir": "recovered/snippets/acheron/asphodel/streamutil",
+    "source_size": 2647,
+    "snippet_count": 20,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: POP_JUMP_BACKWARD_IF_FALSE (234)\nUnsupported opcode: POP_JUMP_BACKWARD_IF_FALSE (234)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/asphodel/version.pyc",
+    "source_path": "recovered/src/acheron/asphodel/version.py",
+    "snippet_dir": "recovered/snippets/acheron/asphodel/version",
+    "source_size": 115,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/__init__.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/__init__",
+    "source_size": 206,
+    "snippet_count": 1,
+    "stderr": "Warning: Stack history is not empty!\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/dark_mode.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/dark_mode.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/dark_mode",
+    "source_size": 382,
+    "snippet_count": 2,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/device_info_dialog.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/device_info_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/device_info_dialog",
+    "source_size": 808,
+    "snippet_count": 22,
+    "stderr": "Warning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/download.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/download.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/download",
+    "source_size": 862,
+    "snippet_count": 22,
+    "stderr": "Warning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/event_database.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/event_database.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/event_database",
+    "source_size": 702,
+    "snippet_count": 2,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/namedprocess.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/namedprocess.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/namedprocess",
+    "source_size": 590,
+    "snippet_count": 8,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/preferences.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/preferences.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/preferences",
+    "source_size": 525,
+    "snippet_count": 4,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/ringbuffer.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/ringbuffer.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/ringbuffer",
+    "source_size": 4370,
+    "snippet_count": 15,
+    "stderr": "Something TERRIBLE happened!\nSomething TERRIBLE happened!\nSomething TERRIBLE happened!\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/setting_widget.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/setting_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/setting_widget",
+    "source_size": 479,
+    "snippet_count": 48,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/ui/__init__.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/ui/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/ui/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/ui/ui_device_info_dialog.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/ui/ui_device_info_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/ui/ui_device_info_dialog",
+    "source_size": 2362,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/ui/ui_unit_preferences_widget.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/ui/ui_unit_preferences_widget.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/ui/ui_unit_preferences_widget",
+    "source_size": 2136,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/ui/ui_unit_selection_dialog.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/ui/ui_unit_selection_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/ui/ui_unit_selection_dialog",
+    "source_size": 3065,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/unit_formatter_spinbox.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/unit_formatter_spinbox.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/unit_formatter_spinbox",
+    "source_size": 373,
+    "snippet_count": 17,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/unit_preferences.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/unit_preferences.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/unit_preferences",
+    "source_size": 5092,
+    "snippet_count": 15,
+    "stderr": "Unsupported Node type: 12\nUnsupported argument found for LIST_EXTEND\nUnsupported opcode: LIST_TO_TUPLE (102)\nSomething TERRIBLE happened!\nSomething TERRIBLE happened!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/unit_selection_dialog.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/unit_selection_dialog.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/unit_selection_dialog",
+    "source_size": 425,
+    "snippet_count": 8,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/hyperborea/version.pyc",
+    "source_path": "recovered/src/acheron/hyperborea/version.py",
+    "snippet_dir": "recovered/snippets/acheron/hyperborea/version",
+    "source_size": 115,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "acheron",
+    "pyc_path": "recovered/pyc/acheron/setproctitle/__init__.pyc",
+    "source_path": "recovered/src/acheron/setproctitle/__init__.py",
+    "snippet_dir": "recovered/snippets/acheron/setproctitle/__init__",
+    "source_size": 1248,
+    "snippet_count": 5,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/asphodel/__init__.pyc",
+    "source_path": "recovered/src/mondo/asphodel/__init__.py",
+    "snippet_dir": "recovered/snippets/mondo/asphodel/__init__",
+    "source_size": 87389,
+    "snippet_count": 340,
+    "stderr": "Warning: block stack is not empty!\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nWarning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: CALL_FUNCTION_EX (170)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: DICT_MERGE (213)\nWarning: block stack is not empty!\nSomething TERRIBLE happened!\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/asphodel/device_info.pyc",
+    "source_path": "recovered/src/mondo/asphodel/device_info.py",
+    "snippet_dir": "recovered/snippets/mondo/asphodel/device_info",
+    "source_size": 8433,
+    "snippet_count": 54,
+    "stderr": "Unsupported Node type: 12\nUnsupported Node type: 12\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: RETURN_GENERATOR (109)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: DICT_MERGE (213)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/asphodel/version.pyc",
+    "source_path": "recovered/src/mondo/asphodel/version.py",
+    "snippet_dir": "recovered/snippets/mondo/asphodel/version",
+    "source_size": 115,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/__init__.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/__init__.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/__init__",
+    "source_size": 206,
+    "snippet_count": 1,
+    "stderr": "Warning: Stack history is not empty!\nWarning: block stack is not empty!\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/dark_mode.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/dark_mode.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/dark_mode",
+    "source_size": 382,
+    "snippet_count": 2,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/device_info_dialog.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/device_info_dialog.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/device_info_dialog",
+    "source_size": 808,
+    "snippet_count": 22,
+    "stderr": "Warning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/download.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/download.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/download",
+    "source_size": 862,
+    "snippet_count": 22,
+    "stderr": "Warning: Stack history is not empty!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/preferences.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/preferences.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/preferences",
+    "source_size": 525,
+    "snippet_count": 4,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/setting_widget.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/setting_widget.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/setting_widget",
+    "source_size": 479,
+    "snippet_count": 48,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/ui/__init__.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/ui/__init__.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/ui/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/ui/ui_device_info_dialog.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/ui/ui_device_info_dialog.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/ui/ui_device_info_dialog",
+    "source_size": 2362,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/ui/ui_unit_preferences_widget.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/ui/ui_unit_preferences_widget.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/ui/ui_unit_preferences_widget",
+    "source_size": 2136,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/unit_formatter_spinbox.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/unit_formatter_spinbox.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/unit_formatter_spinbox",
+    "source_size": 373,
+    "snippet_count": 17,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/unit_preferences.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/unit_preferences.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/unit_preferences",
+    "source_size": 5092,
+    "snippet_count": 15,
+    "stderr": "Unsupported Node type: 12\nUnsupported argument found for LIST_EXTEND\nUnsupported opcode: LIST_TO_TUPLE (102)\nSomething TERRIBLE happened!\nSomething TERRIBLE happened!\nWarning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/hyperborea/version.pyc",
+    "source_path": "recovered/src/mondo/hyperborea/version.py",
+    "snippet_dir": "recovered/snippets/mondo/hyperborea/version",
+    "source_size": 115,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/__init__.pyc",
+    "source_path": "recovered/src/mondo/mondo/__init__.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/__init__",
+    "source_size": 574,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/__main__.pyc",
+    "source_path": "recovered/src/mondo/mondo/__main__.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/__main__",
+    "source_size": 3250,
+    "snippet_count": 5,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/about.pyc",
+    "source_path": "recovered/src/mondo/mondo/about.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/about",
+    "source_size": 380,
+    "snippet_count": 3,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/analysis/__init__.pyc",
+    "source_path": "recovered/src/mondo/mondo/analysis/__init__.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/analysis/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/analysis/csv.pyc",
+    "source_path": "recovered/src/mondo/mondo/analysis/csv.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/analysis/csv",
+    "source_size": 1525,
+    "snippet_count": 8,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/analysis/file.pyc",
+    "source_path": "recovered/src/mondo/mondo/analysis/file.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/analysis/file",
+    "source_size": 1802,
+    "snippet_count": 11,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/analysis/psd.pyc",
+    "source_path": "recovered/src/mondo/mondo/analysis/psd.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/analysis/psd",
+    "source_size": 2958,
+    "snippet_count": 15,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nSomething TERRIBLE happened!\nSomething TERRIBLE happened!\nWarning: block stack is not empty!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/analysis/spectrogram.pyc",
+    "source_path": "recovered/src/mondo/mondo/analysis/spectrogram.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/analysis/spectrogram",
+    "source_size": 311,
+    "snippet_count": 2,
+    "stderr": "Unsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/analysis/time.pyc",
+    "source_path": "recovered/src/mondo/mondo/analysis/time.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/analysis/time",
+    "source_size": 2214,
+    "snippet_count": 14,
+    "stderr": "Warning: block stack is not empty!\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/analysis/util.pyc",
+    "source_path": "recovered/src/mondo/mondo/analysis/util.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/analysis/util",
+    "source_size": 14857,
+    "snippet_count": 35,
+    "stderr": "Unsupported Node type: 12\nSomething TERRIBLE happened!\nSomething TERRIBLE happened!\nUnsupported opcode: POP_JUMP_FORWARD_IF_NONE (222)\nUnsupported opcode: POP_JUMP_FORWARD_IF_NOT_NONE (221)\nWarning: block stack is not empty!\nSomething TERRIBLE happened!\nUnsupported opcode: MAKE_CELL (225)\nWarning: block stack is not empty!\nWarning: block stack is not empty!\nPycBuffer::getByte(): Unexpected end of stream\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/datetime_subset.pyc",
+    "source_path": "recovered/src/mondo/mondo/datetime_subset.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/datetime_subset",
+    "source_size": 392,
+    "snippet_count": 15,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/export_csv.pyc",
+    "source_path": "recovered/src/mondo/mondo/export_csv.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/export_csv",
+    "source_size": 617,
+    "snippet_count": 4,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/export_script.pyc",
+    "source_path": "recovered/src/mondo/mondo/export_script.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/export_script",
+    "source_size": 5738,
+    "snippet_count": 35,
+    "stderr": "Warning: block stack is not empty!\nSomething TERRIBLE happened!\nUnsupported opcode: DICT_MERGE (213)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/main.pyc",
+    "source_path": "recovered/src/mondo/mondo/main.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/main",
+    "source_size": 766,
+    "snippet_count": 40,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/mondo_rc.pyc",
+    "source_path": "recovered/src/mondo/mondo/mondo_rc.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/mondo_rc",
+    "source_size": 993906,
+    "snippet_count": 3,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/preferences.pyc",
+    "source_path": "recovered/src/mondo/mondo/preferences.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/preferences",
+    "source_size": 493,
+    "snippet_count": 6,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/psd_options.pyc",
+    "source_path": "recovered/src/mondo/mondo/psd_options.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/psd_options",
+    "source_size": 818,
+    "snippet_count": 24,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\nUnsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/select_subchannels.pyc",
+    "source_path": "recovered/src/mondo/mondo/select_subchannels.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/select_subchannels",
+    "source_size": 377,
+    "snippet_count": 5,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/select_synchronous.pyc",
+    "source_path": "recovered/src/mondo/mondo/select_synchronous.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/select_synchronous",
+    "source_size": 393,
+    "snippet_count": 5,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/setting_viewer.pyc",
+    "source_path": "recovered/src/mondo/mondo/setting_viewer.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/setting_viewer",
+    "source_size": 401,
+    "snippet_count": 4,
+    "stderr": "Unsupported opcode: MAKE_CELL (225)\n"
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/__init__.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/__init__.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/__init__",
+    "source_size": 72,
+    "snippet_count": 1,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_about.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_about.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_about",
+    "source_size": 6916,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_datetime_subset.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_datetime_subset.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_datetime_subset",
+    "source_size": 9643,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_main.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_main.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_main",
+    "source_size": 14221,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_preferences.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_preferences.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_preferences",
+    "source_size": 4871,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_psd_options.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_psd_options.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_psd_options",
+    "source_size": 8121,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_select_subchannels.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_select_subchannels.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_select_subchannels",
+    "source_size": 1892,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_select_synchronous.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_select_synchronous.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_select_synchronous",
+    "source_size": 1892,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/ui/ui_setting_viewer.pyc",
+    "source_path": "recovered/src/mondo/mondo/ui/ui_setting_viewer.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/ui/ui_setting_viewer",
+    "source_size": 1793,
+    "snippet_count": 4,
+    "stderr": ""
+  },
+  {
+    "package": "mondo",
+    "pyc_path": "recovered/pyc/mondo/mondo/version.pyc",
+    "source_path": "recovered/src/mondo/mondo/version.py",
+    "snippet_dir": "recovered/snippets/mondo/mondo/version",
+    "source_size": 420,
+    "snippet_count": 1,
+    "stderr": ""
+  }
+]

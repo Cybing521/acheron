@@ -1,0 +1,40 @@
+# Source Generated with Decompyle++
+# File: tmpkpbn9g58.marshal (Python 3.11)
+
+main_init(MAIN_PROCESS_NAME)
+app = QtCore.QCoreApplication(sys.argv)
+app.setApplicationName('Acheron')
+app.setOrganizationDomain('suprocktech.com')
+app.setOrganizationName('Suprock Tech')
+app.setApplicationVersion(__version__)
+setup_logging(console = True)
+create_empty_settings()
+timer = QtCore.QTimer()
+timer.start(500)
+timer.timeout.connect((lambda : pass))
+logger.info('Acheron started (Version {})'.format(__version__))
+
+try:
+    missing_funcs = asphodel.nativelib.missing_funcs
+except AttributeError:
+    missing_funcs = []
+    message = 'Asphodel python mismatch!'
+    logging.warning(message)
+
+if missing_funcs:
+    missing_str = ', '.join(sorted(missing_funcs))
+    logging.warning('Missing Asphodel functions: {}'.format(missing_str))
+proxy_manager = DeviceProxyManager(DEVICE_PROCESS_NAME)
+preferences = Preferences()
+dispatcher = Dispatcher(proxy_manager, preferences, CALC_PROCESS_NAME)
+schedule_path = QtCore.QStandardPaths.writableLocation(QtCore.QStandardPaths.StandardLocation.AppLocalDataLocation)
+schedule_reader = ScheduleReader(schedule_path, dispatcher)
+schedule_reader.start()
+app.exec()
+logger.info('Acheron exiting')
+schedule_reader.stop()
+dispatcher.stop()
+proxy_manager.stop()
+dispatcher.join()
+logger.info('Acheron finished')
+force_exit()

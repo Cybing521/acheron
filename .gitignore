@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+.venv-recovered/
+venv/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# Recovered/build artifacts
+extracted/
+runtime_support/
+analysis/patched/
+analysis/acheron/
+analysis/mondo/
+analysis/acheron_pyc/
+analysis/mondo_pyc/
+analysis/*.marshal
+recovered/pyc/
+tools/__pycache__/
+assembled/src/**/__pycache__/
+recovered/src/**/__pycache__/
+recovered/snippets/**/__pycache__/
+
+# Local binaries and manuals
+*.exe
+*.pdf
+
+# OS/editor noise
+Thumbs.db

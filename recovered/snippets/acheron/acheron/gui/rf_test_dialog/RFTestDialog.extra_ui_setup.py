@@ -1,0 +1,18 @@
+# Source Generated with Decompyle++
+# File: tmpspd2inri.marshal (Python 3.11)
+
+self.test_type_group = QtWidgets.QButtonGroup(self)
+self.test_type_group.addButton(self.fixedRadioButton)
+self.test_type_group.addButton(self.sweepRadioButton)
+self.test_mode_group = QtWidgets.QButtonGroup(self)
+self.test_mode_group.addButton(self.txCarrierRadioButton)
+self.test_mode_group.addButton(self.rxCarrierRadioButton)
+self.test_mode_group.addButton(self.txModulatedRadioButton)
+self.fixedChannel.editingFinished.connect(self.check_channels)
+self.startChannel.editingFinished.connect(self.check_channels)
+self.stopChannel.editingFinished.connect(self.check_channels)
+self.fixedChannel.valueChanged.connect(self.update_frequencies)
+self.startChannel.valueChanged.connect(self.update_frequencies)
+self.stopChannel.valueChanged.connect(self.update_frequencies)
+self.fixedRadioButton.setChecked(True)
+self.txCarrierRadioButton.setChecked(True)

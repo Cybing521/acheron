@@ -1,0 +1,18 @@
+# Source Generated with Decompyle++
+# File: tmpm4vvqolu.marshal (Python 3.11)
+
+self.close()
+self.remote_process.join()
+self.data_thread.join()
+self.status_thread.join()
+self.status_rx_pipe.close()
+self.status_tx_pipe.close()
+self.packet_rx_pipe.close()
+self.packet_tx_pipe.close()
+self.stream_ctrl_rx_pipe.close()
+self.stream_ctrl_tx_pipe.close()
+self.data_rx_pipe.close()
+self.data_tx_pipe.close()
+self.calc_ctrl_rx_pipe.close()
+self.calc_ctrl_tx_pipe.close()
+self.logger.debug('Calc process joined')

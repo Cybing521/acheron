@@ -1,0 +1,22 @@
+# Source Generated with Decompyle++
+# File: tmprndb8ysq.marshal (Python 3.11)
+
+if not HardwareTestDialog.objectName():
+    HardwareTestDialog.setObjectName('HardwareTestDialog')
+HardwareTestDialog.resize(754, 426)
+self.verticalLayout = QVBoxLayout(HardwareTestDialog)
+self.verticalLayout.setObjectName('verticalLayout')
+self.testOutput = QPlainTextEdit(HardwareTestDialog)
+self.testOutput.setObjectName('testOutput')
+self.testOutput.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+self.testOutput.setReadOnly(True)
+self.verticalLayout.addWidget(self.testOutput)
+self.buttonBox = QDialogButtonBox(HardwareTestDialog)
+self.buttonBox.setObjectName('buttonBox')
+self.buttonBox.setOrientation(Qt.Horizontal)
+self.buttonBox.setStandardButtons(QDialogButtonBox.Close | QDialogButtonBox.Reset)
+self.verticalLayout.addWidget(self.buttonBox)
+self.retranslateUi(HardwareTestDialog)
+self.buttonBox.accepted.connect(HardwareTestDialog.accept)
+self.buttonBox.rejected.connect(HardwareTestDialog.reject)
+QMetaObject.connectSlotsByName(HardwareTestDialog)

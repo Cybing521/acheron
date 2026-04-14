@@ -1,0 +1,27 @@
+# Source Generated with Decompyle++
+# File: tmpc2v_2uxe.marshal (Python 3.11)
+
+
+def setupUi(self, SettingDialog):
+    if not SettingDialog.objectName():
+        SettingDialog.setObjectName('SettingDialog')
+    SettingDialog.resize(400, 53)
+    self.verticalLayout = QVBoxLayout(SettingDialog)
+    self.verticalLayout.setObjectName('verticalLayout')
+    self.tabWidget = QTabWidget(SettingDialog)
+    self.tabWidget.setObjectName('tabWidget')
+    self.verticalLayout.addWidget(self.tabWidget)
+    self.buttonBox = QDialogButtonBox(SettingDialog)
+    self.buttonBox.setObjectName('buttonBox')
+    self.buttonBox.setOrientation(Qt.Horizontal)
+    self.buttonBox.setStandardButtons(QDialogButtonBox.Cancel | QDialogButtonBox.Ok | QDialogButtonBox.RestoreDefaults)
+    self.verticalLayout.addWidget(self.buttonBox)
+    self.retranslateUi(SettingDialog)
+    self.buttonBox.accepted.connect(SettingDialog.accept)
+    self.buttonBox.rejected.connect(SettingDialog.reject)
+    QMetaObject.connectSlotsByName(SettingDialog)
+
+
+def retranslateUi(self, SettingDialog):
+    SettingDialog.setWindowTitle(QCoreApplication.translate('SettingDialog', 'Device Settings', None))
+

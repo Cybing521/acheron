@@ -1,0 +1,21 @@
+# Source Generated with Decompyle++
+# File: tmp3_30cw6w.marshal (Python 3.11)
+
+if not RFPowerPanel.objectName():
+    RFPowerPanel.setObjectName('RFPowerPanel')
+RFPowerPanel.resize(111, 99)
+self.verticalLayout = QVBoxLayout(RFPowerPanel)
+self.verticalLayout.setObjectName('verticalLayout')
+self.enableButton = QPushButton(RFPowerPanel)
+self.enableButton.setObjectName('enableButton')
+self.verticalLayout.addWidget(self.enableButton)
+self.disableButton = QPushButton(RFPowerPanel)
+self.disableButton.setObjectName('disableButton')
+self.verticalLayout.addWidget(self.disableButton)
+self.ctrlVarLayout = QVBoxLayout()
+self.ctrlVarLayout.setObjectName('ctrlVarLayout')
+self.verticalLayout.addLayout(self.ctrlVarLayout)
+self.verticalSpacer = QSpacerItem(10, 10, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+self.verticalLayout.addItem(self.verticalSpacer)
+self.retranslateUi(RFPowerPanel)
+QMetaObject.connectSlotsByName(RFPowerPanel)

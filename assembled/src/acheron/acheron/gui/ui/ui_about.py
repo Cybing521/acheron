@@ -1,0 +1,83 @@
+# Source Generated with Decompyle++
+# File: ui_about.pyc (Python 3.11)
+
+from PySide6.QtCore import QCoreApplication, QDate, QDateTime, QLocale, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt
+from PySide6.QtGui import QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QGradient, QIcon, QImage, QKeySequence, QLinearGradient, QPainter, QPalette, QPixmap, QRadialGradient, QTransform
+from PySide6.QtWidgets import QAbstractButton, QApplication, QDialog, QDialogButtonBox, QLabel, QSizePolicy, QSpacerItem, QVBoxLayout, QWidget
+
+class Ui_AboutDialog(object):
+    
+    def setupUi(self, AboutDialog):
+        if not AboutDialog.objectName():
+            AboutDialog.setObjectName('AboutDialog')
+        AboutDialog.resize(302, 232)
+        self.verticalLayout = QVBoxLayout(AboutDialog)
+        self.verticalLayout.setObjectName('verticalLayout')
+        self.productLabel = QLabel(AboutDialog)
+        self.productLabel.setObjectName('productLabel')
+        font = QFont()
+        font.setBold(True)
+        self.productLabel.setFont(font)
+        self.productLabel.setAlignment(Qt.AlignCenter)
+        self.productLabel.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.TextSelectableByMouse)
+        self.verticalLayout.addWidget(self.productLabel)
+        self.companyLabel = QLabel(AboutDialog)
+        self.companyLabel.setObjectName('companyLabel')
+        self.companyLabel.setAlignment(Qt.AlignCenter)
+        self.companyLabel.setOpenExternalLinks(True)
+        self.companyLabel.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.TextSelectableByMouse)
+        self.verticalLayout.addWidget(self.companyLabel)
+        self.copyrightLabel = QLabel(AboutDialog)
+        self.copyrightLabel.setObjectName('copyrightLabel')
+        self.copyrightLabel.setTextFormat(Qt.RichText)
+        self.copyrightLabel.setAlignment(Qt.AlignCenter)
+        self.copyrightLabel.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.TextSelectableByMouse)
+        self.verticalLayout.addWidget(self.copyrightLabel)
+        self.verticalSpacer_3 = QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalLayout.addItem(self.verticalSpacer_3)
+        self.version = QLabel(AboutDialog)
+        self.version.setObjectName('version')
+        self.version.setAlignment(Qt.AlignCenter)
+        self.version.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.TextSelectableByMouse)
+        self.verticalLayout.addWidget(self.version)
+        self.buildDate = QLabel(AboutDialog)
+        self.buildDate.setObjectName('buildDate')
+        self.buildDate.setAlignment(Qt.AlignCenter)
+        self.buildDate.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.TextSelectableByMouse)
+        self.verticalLayout.addWidget(self.buildDate)
+        self.verticalSpacer_2 = QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        self.verticalLayout.addItem(self.verticalSpacer_2)
+        self.libraryVersionsLabel = QLabel(AboutDialog)
+        self.libraryVersionsLabel.setObjectName('libraryVersionsLabel')
+        self.libraryVersionsLabel.setFont(font)
+        self.libraryVersionsLabel.setAlignment(Qt.AlignCenter)
+        self.libraryVersionsLabel.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.TextSelectableByMouse)
+        self.verticalLayout.addWidget(self.libraryVersionsLabel)
+        self.libraryVersions = QLabel(AboutDialog)
+        self.libraryVersions.setObjectName('libraryVersions')
+        self.libraryVersions.setTextInteractionFlags(Qt.LinksAccessibleByMouse | Qt.TextSelectableByMouse)
+        self.verticalLayout.addWidget(self.libraryVersions)
+        self.verticalSpacer = QSpacerItem(20, 0, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.verticalLayout.addItem(self.verticalSpacer)
+        self.buttonBox = QDialogButtonBox(AboutDialog)
+        self.buttonBox.setObjectName('buttonBox')
+        self.buttonBox.setOrientation(Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QDialogButtonBox.Close)
+        self.verticalLayout.addWidget(self.buttonBox)
+        self.retranslateUi(AboutDialog)
+        self.buttonBox.accepted.connect(AboutDialog.accept)
+        self.buttonBox.rejected.connect(AboutDialog.reject)
+        QMetaObject.connectSlotsByName(AboutDialog)
+
+    
+    def retranslateUi(self, AboutDialog):
+        AboutDialog.setWindowTitle(QCoreApplication.translate('AboutDialog', 'About Acheron', None))
+        self.productLabel.setText(QCoreApplication.translate('AboutDialog', 'Acheron', None))
+        self.companyLabel.setText(QCoreApplication.translate('AboutDialog', 'by <a href="https://suprocktech.com/">Suprock Technologies</a>', None))
+        self.copyrightLabel.setText(QCoreApplication.translate('AboutDialog', '&copy; 2023', None))
+        self.version.setText(QCoreApplication.translate('AboutDialog', 'Version', None))
+        self.buildDate.setText(QCoreApplication.translate('AboutDialog', 'Build Date', None))
+        self.libraryVersionsLabel.setText(QCoreApplication.translate('AboutDialog', 'Libraries', None))
+        self.libraryVersions.setText(QCoreApplication.translate('AboutDialog', 'library: version', None))
+
+

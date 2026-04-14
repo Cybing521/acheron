@@ -1,0 +1,6 @@
+# Source Generated with Decompyle++
+# File: tmps6prcr3o.marshal (Python 3.11)
+
+count = c_int()
+self.lib.lib.asphodel_get_strain_bridge_count(channel_info, byref(count))
+return count.value

@@ -1,0 +1,15 @@
+# Source Generated with Decompyle++
+# File: tmph34srvag.marshal (Python 3.11)
+
+RGBControlWidget.setWindowTitle(QCoreApplication.translate('RGBControlWidget', 'RGB Control Widget', None))
+self.whiteButton.setText(QCoreApplication.translate('RGBControlWidget', 'White', None))
+self.redButton.setText(QCoreApplication.translate('RGBControlWidget', 'Red', None))
+self.greenButton.setText(QCoreApplication.translate('RGBControlWidget', 'Green', None))
+self.blueButton.setText(QCoreApplication.translate('RGBControlWidget', 'Blue', None))
+self.cyanButton.setText(QCoreApplication.translate('RGBControlWidget', 'Cyan', None))
+self.magentaButton.setText(QCoreApplication.translate('RGBControlWidget', 'Magenta', None))
+self.yellowButton.setText(QCoreApplication.translate('RGBControlWidget', 'Yellow', None))
+self.blackButton.setText(QCoreApplication.translate('RGBControlWidget', 'Black', None))
+self.blueLabel.setText(QCoreApplication.translate('RGBControlWidget', 'Blue', None))
+self.greenLabel.setText(QCoreApplication.translate('RGBControlWidget', 'Green', None))
+self.redLabel.setText(QCoreApplication.translate('RGBControlWidget', 'Red', None))

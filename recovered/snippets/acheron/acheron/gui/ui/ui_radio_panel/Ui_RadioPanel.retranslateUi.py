@@ -1,0 +1,16 @@
+# Source Generated with Decompyle++
+# File: tmps7b79_ba.marshal (Python 3.11)
+
+RadioPanel.setWindowTitle(QCoreApplication.translate('RadioPanel', 'Radio Panel', None))
+RadioPanel.setTitle(QCoreApplication.translate('RadioPanel', 'Radio', None))
+self.actionConnectSpecificBootloader.setText(QCoreApplication.translate('RadioPanel', 'Connect Specific Bootloader...', None))
+self.actionConnectNoStreaming.setText(QCoreApplication.translate('RadioPanel', 'Connect (No Streaming)', None))
+self.actionConnectSpecificSerial.setText(QCoreApplication.translate('RadioPanel', 'Connect Specific Serial...', None))
+self.actionClear.setText(QCoreApplication.translate('RadioPanel', 'Clear Scan List', None))
+self.actionClear.setToolTip(QCoreApplication.translate('RadioPanel', 'Clear Scan List', None))
+self.detailScanButton.setText(QCoreApplication.translate('RadioPanel', 'Detail Scan...', None))
+self.clearButton.setText(QCoreApplication.translate('RadioPanel', 'Clear', None))
+self.connectButton.setText(QCoreApplication.translate('RadioPanel', 'Connect', None))
+self.disconnectButton.setText(QCoreApplication.translate('RadioPanel', 'Disconnect', None))
+self.advancedMenuButton.setText(QCoreApplication.translate('RadioPanel', 'Advanced Menu', None))
+self.goToRemoteButton.setText(QCoreApplication.translate('RadioPanel', 'Go To Remote Tab', None))
