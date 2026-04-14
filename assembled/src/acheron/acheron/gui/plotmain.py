@@ -35,6 +35,11 @@ try:
 except Exception:
     ScheduleReader = Any
 
+
+def _hardware_backend_available() -> bool:
+    required = ("nativelib", "find_tcp_devices", "find_usb_devices", "create_tcp_device")
+    return all(hasattr(asphodel, name) for name in required)
+
 # NOTE: assembled from module-level decompilation plus snippet/disassembly fallbacks.
 # NOTE: function defaults and some class-level assignments may need manual repair.
 
@@ -61,6 +66,7 @@ class PlotMainWindow(Ui_PlotMainWindow, QtWidgets.QMainWindow):
         self.preferences = preferences
         self.settings = QtCore.QSettings()
         self.schedule_reader = schedule_reader
+        self.hardware_backend_available = _hardware_backend_available()
         self.firmware_cache = diskcache.Cache(self.preferences.firmware_dir, size_limit = 100000000.0)
         set_style(QtWidgets.QApplication.instance(), self.preferences.dark_mode)
         self.tab_widgets = []
@@ -175,7 +181,14 @@ class PlotMainWindow(Ui_PlotMainWindow, QtWidgets.QMainWindow):
         else:
             title = self.tr('{} (dev)').format(app_name)
         self.setWindowTitle(title)
-        self.warningLabel.setVisible(False)
+        if self.hardware_backend_available:
+            self.warningLabel.setVisible(False)
+        else:
+            self.warningLabel.setText(self.tr('Warning: Hardware backend unavailable on this platform'))
+            self.warningLabel.setVisible(True)
+            self.actionRescanUSB.setEnabled(False)
+            self.actionFindTCPDevices.setEnabled(False)
+            self.actionConnectTCPDevice.setEnabled(False)
 
     def setup_callbacks(self):
         self.dispatcher.controller_created.connect(self.controller_created)
@@ -1149,7 +1162,14 @@ class PlotMainWindow(Ui_PlotMainWindow, QtWidgets.QMainWindow):
 
     def set_disable_archiving(self):
         disable_archiving = self.actionDisableArchiving.isChecked()
-        self.warningLabel.setVisible(disable_archiving)
+        if disable_archiving:
+            self.warningLabel.setText(self.tr('Warning: Archiving Disabled'))
+            self.warningLabel.setVisible(True)
+        elif not self.hardware_backend_available:
+            self.warningLabel.setText(self.tr('Warning: Hardware backend unavailable on this platform'))
+            self.warningLabel.setVisible(True)
+        else:
+            self.warningLabel.setVisible(False)
         self.dispatcher.set_disable_archiving(disable_archiving)
 
     def show_preferences(self):
@@ -1362,191 +1382,65 @@ class PlotMainWindow(Ui_PlotMainWindow, QtWidgets.QMainWindow):
         self.actionDisableRFPower.setText(disable_text)
         self.actionDisableRFPower.setEnabled(enabled > 0)
 
-    def find_tcp_devices(self, *, initial_devices):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 RESUME
-        #    2 LOAD_GLOBAL NULL + TCPScanDialog
-        #   14 LOAD_FAST self
-        #   16 LOAD_ATTR dispatcher
-        #   26 LOAD_FAST self
-        #   28 LOAD_ATTR preferences
-        #   38 LOAD_FAST initial_devices
-        #   40 LOAD_FAST self
-        #   42 PRECALL
-        #   46 CALL
-        #   56 STORE_FAST dialog
-        #   58 NOP
-        #   60 LOAD_FAST dialog
-        #   62 LOAD_METHOD exec
-        #   84 PRECALL
-        #   88 CALL
-        #   98 STORE_FAST ret
-        #  100 LOAD_FAST ret
-        #  102 LOAD_CONST 0
-        #  104 COMPARE_OP ==
-        #  110 POP_JUMP_FORWARD_IF_FALSE to 158
-        #  112 NOP
-        #  114 LOAD_FAST dialog
-        #  116 LOAD_METHOD deleteLater
-        #  138 PRECALL
-        #  142 CALL
-        #  152 POP_TOP
-        #  154 LOAD_CONST None
-        #  156 RETURN_VALUE
-        #  158 LOAD_FAST dialog
-        #  160 LOAD_METHOD get_selected_devices
-        #  182 PRECALL
-        #  186 CALL
-        #  196 STORE_FAST devices
-        #  198 LOAD_FAST dialog
-        #  200 LOAD_METHOD deleteLater
-        #  222 PRECALL
-        #  226 CALL
-        #  236 POP_TOP
-        #  238 JUMP_FORWARD to 290
-        #  240 PUSH_EXC_INFO
-        #  242 LOAD_FAST dialog
-        #  244 LOAD_METHOD deleteLater
-        #  266 PRECALL
-        #  270 CALL
-        #  280 POP_TOP
-        #  282 RERAISE
-        #  284 COPY
-        #  286 POP_EXCEPT
-        #  288 RERAISE
-        #  290 LOAD_FAST devices
-        #  292 GET_ITER
-        #  294 FOR_ITER to 352
-        #  296 STORE_FAST device
-        #  298 LOAD_FAST self
-        #  300 LOAD_ATTR dispatcher
-        #  310 LOAD_METHOD create_tcp_proxy_from_device
-        #  332 LOAD_FAST device
-        #  334 PRECALL
-        #  338 CALL
-        #  348 POP_TOP
-        #  350 JUMP_BACKWARD to 294
-        #  352 LOAD_CONST None
-        #  354 RETURN_VALUE
-        pass
+    def find_tcp_devices(self, checked = False, *, initial_devices = None):
+        del checked
+        if not self.hardware_backend_available:
+            QtWidgets.QMessageBox.warning(
+                self,
+                self.tr('Unavailable'),
+                self.tr('TCP device discovery requires the Asphodel native backend and is not available on this platform.'),
+            )
+            return None
+        dialog = TCPScanDialog(self.dispatcher, self.preferences, initial_devices or [], self)
+        try:
+            if dialog.exec() == 0:
+                return None
+            devices = dialog.get_selected_devices()
+        finally:
+            dialog.deleteLater()
+        for device in devices:
+            self.dispatcher.create_tcp_proxy_from_device(device)
+        return None
 
     def connect_tcp_device_error(self):
         QtWidgets.QMessageBox.critical(self, self.tr('Error'), self.tr('Could not connect to device!'))
 
-    def connect_tcp_device(self):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 RESUME
-        #    2 LOAD_GLOBAL NULL + TCPConnectDialog
-        #   14 LOAD_FAST self
-        #   16 PRECALL
-        #   20 CALL
-        #   30 STORE_FAST dialog
-        #   32 NOP
-        #   34 LOAD_FAST dialog
-        #   36 LOAD_METHOD exec
-        #   58 PRECALL
-        #   62 CALL
-        #   72 STORE_FAST ret
-        #   74 LOAD_FAST ret
-        #   76 LOAD_CONST 0
-        #   78 COMPARE_OP ==
-        #   84 POP_JUMP_FORWARD_IF_FALSE to 132
-        #   86 NOP
-        #   88 LOAD_FAST dialog
-        #   90 LOAD_METHOD deleteLater
-        #  112 PRECALL
-        #  116 CALL
-        #  126 POP_TOP
-        #  128 LOAD_CONST None
-        #  130 RETURN_VALUE
-        #  132 LOAD_FAST dialog
-        #  134 LOAD_METHOD get_results
-        #  156 PRECALL
-        #  160 CALL
-        #  170 STORE_FAST results
-        #  172 LOAD_FAST dialog
-        #  174 LOAD_METHOD deleteLater
-        #  196 PRECALL
-        #  200 CALL
-        #  210 POP_TOP
-        #  212 JUMP_FORWARD to 264
-        #  214 PUSH_EXC_INFO
-        #  216 LOAD_FAST dialog
-        #  218 LOAD_METHOD deleteLater
-        #  240 PRECALL
-        #  244 CALL
-        #  254 POP_TOP
-        #  256 RERAISE
-        #  258 COPY
-        #  260 POP_EXCEPT
-        #  262 RERAISE
-        #  264 LOAD_FAST self
-        #  266 LOAD_ATTR dispatcher
-        #  276 LOAD_METHOD create_manual_tcp_proxy
-        #  298 LOAD_FAST results
-        #  300 LOAD_CONST 'hostname'
-        #  302 BINARY_SUBSCR
-        #  312 LOAD_FAST results
-        #  314 LOAD_CONST 'port'
-        #  316 BINARY_SUBSCR
-        #  326 LOAD_CONST 1000
-        #  328 LOAD_FAST results
-        #  330 LOAD_CONST 'serial_number'
-        #  332 BINARY_SUBSCR
-        #  342 LOAD_FAST self
-        #  344 LOAD_ATTR connect_tcp_device_error
-        #  354 KW_NAMES
-        #  356 PRECALL
-        #  360 CALL
-        #  370 POP_TOP
-        #  372 LOAD_CONST None
-        #  374 RETURN_VALUE
-        pass
+    def connect_tcp_device(self, checked = False):
+        del checked
+        if not self.hardware_backend_available:
+            QtWidgets.QMessageBox.warning(
+                self,
+                self.tr('Unavailable'),
+                self.tr('Manual TCP device connections require the Asphodel native backend and are not available on this platform.'),
+            )
+            return None
+        dialog = TCPConnectDialog(self)
+        try:
+            if dialog.exec() == 0:
+                return None
+            results = dialog.get_results()
+        finally:
+            dialog.deleteLater()
+        self.dispatcher.create_manual_tcp_proxy(
+            results['hostname'],
+            results['port'],
+            1000,
+            results['serial_number'],
+            self.connect_tcp_device_error,
+        )
+        return None
 
     def initial_devices_connected_cb(self, tcp_scanned, tcp_devices):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 RESUME
-        #    2 LOAD_FAST self
-        #    4 LOAD_ATTR tab_widgets
-        #   14 POP_JUMP_FORWARD_IF_FALSE to 84
-        #   16 LOAD_FAST self
-        #   18 LOAD_METHOD show_tab
-        #   40 LOAD_FAST self
-        #   42 LOAD_ATTR tab_widgets
-        #   52 LOAD_CONST 0
-        #   54 BINARY_SUBSCR
-        #   64 PRECALL
-        #   68 CALL
-        #   78 POP_TOP
-        #   80 LOAD_CONST None
-        #   82 RETURN_VALUE
-        #   84 LOAD_FAST tcp_scanned
-        #   86 POP_JUMP_FORWARD_IF_TRUE to 126
-        #   88 LOAD_GLOBAL NULL + asphodel
-        #  100 LOAD_ATTR find_tcp_devices
-        #  110 PRECALL
-        #  114 CALL
-        #  124 STORE_FAST tcp_devices
-        #  126 LOAD_FAST tcp_devices
-        #  128 POP_JUMP_FORWARD_IF_FALSE to 178
-        #  130 LOAD_FAST self
-        #  132 LOAD_METHOD find_tcp_devices
-        #  154 LOAD_FAST tcp_devices
-        #  156 KW_NAMES
-        #  158 PRECALL
-        #  162 CALL
-        #  172 POP_TOP
-        #  174 LOAD_CONST None
-        #  176 RETURN_VALUE
-        #  178 LOAD_CONST None
-        #  180 RETURN_VALUE
-        pass
+        if self.tab_widgets:
+            self.show_tab(self.tab_widgets[0])
+            return None
+        if not self.hardware_backend_available:
+            return None
+        if not tcp_scanned:
+            tcp_devices = asphodel.find_tcp_devices()
+        if tcp_devices:
+            self.find_tcp_devices(initial_devices = tcp_devices)
+        return None
 
     def upload_manager_changed_cb(self, upload_manager):
         # TODO: pycdc could not reconstruct this body.
