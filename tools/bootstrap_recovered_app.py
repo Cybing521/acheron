@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ASSEMBLED_SRC_ROOT = ROOT / "assembled" / "src"
 RUNTIME_SUPPORT_ROOT = ROOT / "runtime_support"
+QT_RUNTIME_ROOT = ROOT / "qt-runtime"
 
 ENTRY_MODULES = {
     "acheron": "acheron.gui.__main__",
@@ -78,15 +79,20 @@ def configure_qt_environment() -> None:
     qt_root = Path(PySide6.__file__).resolve().parent / "Qt"
     plugins_dir = qt_root / "plugins"
     platforms_dir = plugins_dir / "platforms"
-    lib_dir = qt_root / "lib"
+    visible_plugins_dir = QT_RUNTIME_ROOT / "plugins"
+    visible_platforms_dir = visible_plugins_dir / "platforms"
 
-    if plugins_dir.exists() and "QT_PLUGIN_PATH" not in os.environ:
-        os.environ["QT_PLUGIN_PATH"] = str(plugins_dir)
-    if platforms_dir.exists() and "QT_QPA_PLATFORM_PLUGIN_PATH" not in os.environ:
-        os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = str(platforms_dir)
+    plugin_root = plugins_dir
+    platform_root = platforms_dir
 
-    if sys.platform == "darwin" and lib_dir.exists() and "DYLD_FRAMEWORK_PATH" not in os.environ:
-        os.environ["DYLD_FRAMEWORK_PATH"] = str(lib_dir)
+    if sys.platform == "darwin" and visible_platforms_dir.exists():
+        plugin_root = visible_plugins_dir
+        platform_root = visible_platforms_dir
+
+    if plugin_root.exists() and "QT_PLUGIN_PATH" not in os.environ:
+        os.environ["QT_PLUGIN_PATH"] = str(plugin_root)
+    if platform_root.exists() and "QT_QPA_PLATFORM_PLUGIN_PATH" not in os.environ:
+        os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = str(platform_root)
 
 
 def prepend_paths(paths: list[Path]) -> None:

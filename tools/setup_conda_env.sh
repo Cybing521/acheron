@@ -7,6 +7,7 @@ REQ_FILE="$ROOT/assembled/requirements-local.txt"
 SITE_PACKAGES="$ENV_DIR/lib/python3.11/site-packages"
 LOCAL_PYSIDE_SITE="$HOME/Library/Python/3.9/lib/python/site-packages"
 LOCAL_PYSIDE_VERSION=""
+QT_RUNTIME_DIR="$ROOT/qt-runtime"
 
 if ! command -v conda >/dev/null 2>&1; then
   echo "conda not found in PATH" >&2
@@ -49,6 +50,8 @@ else
 fi
 
 mkdir -p "$ROOT/.cache/matplotlib-conda"
+mkdir -p "$QT_RUNTIME_DIR"
+rsync -a --delete "$SITE_PACKAGES/PySide6/Qt/plugins/" "$QT_RUNTIME_DIR/plugins/"
 
 cat <<EOF
 Conda environment created at:

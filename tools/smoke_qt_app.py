@@ -5,6 +5,7 @@ import argparse
 import importlib
 import json
 import sys
+import threading
 import traceback
 from pathlib import Path
 
@@ -75,6 +76,18 @@ def main() -> int:
     target_module = args.module or bootstrap.ENTRY_MODULES[args.app]
     paths = bootstrap.bootstrap(args.app, target_module)
     from PySide6 import QtCore, QtWidgets
+
+    def _threading_excepthook(args) -> None:
+        payload = {
+            "event": "thread_exception",
+            "thread_name": getattr(args.thread, "name", None),
+            "type": args.exc_type.__name__,
+            "message": str(args.exc_value),
+            "traceback": "".join(traceback.format_exception(args.exc_type, args.exc_value, args.exc_traceback)),
+        }
+        print(json.dumps(payload, ensure_ascii=False), flush=True)
+
+    threading.excepthook = _threading_excepthook
 
     _patch_message_boxes(QtWidgets)
     _patch_exec(QtCore, QtWidgets, args.timeout_ms, args.snapshot_delay_ms)

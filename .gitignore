@@ -17,6 +17,7 @@ venv/
 .ruff_cache/
 .cache/
 .DS_Store
+qt-runtime/
 
 # Recovered/build artifacts
 extracted/

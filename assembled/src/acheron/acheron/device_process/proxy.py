@@ -606,16 +606,16 @@ class DeviceProxyManager:
     def stop(self):
         for proxy in self.proxies:
             proxy.close_connection()
-            for proxy in self.proxies:
-                proxy.wait_for_close()
-                self.log_listener.stop()
-                return None
+        for proxy in self.proxies:
+            proxy.wait_for_close()
+        self.log_listener.stop()
+        return None
 
     def clear_finished_proxies(self):
         for proxy in self.proxies.copy():
             if proxy.is_finished():
                 self.proxies.remove(proxy)
-            return None
+        return None
 
     def new_proxy(self, serial_number, find_func, *args, **kwargs):
         # TODO: pycdc could not reconstruct this body.

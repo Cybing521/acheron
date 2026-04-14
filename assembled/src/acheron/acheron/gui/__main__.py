@@ -63,7 +63,10 @@ def main():
         missing_funcs = asphodel.nativelib.missing_funcs
     except AttributeError:
         missing_funcs = []
-        message = 'Asphodel python mismatch!'
+        if sys.platform == 'win32':
+            message = 'Asphodel native library is unavailable in this recovered build.'
+        else:
+            message = 'Asphodel native backend is unavailable on this platform; hardware-specific features will remain disabled.'
         logging.warning(message)
         QtWidgets.QMessageBox.warning(None, 'Warning', message)
 
