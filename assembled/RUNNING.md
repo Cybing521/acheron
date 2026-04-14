@@ -46,7 +46,7 @@ If the Homebrew/PyPI stack still fails on macOS because Qt cannot initialize a p
 ```
 
 `run_recovered_app.sh` uses `.conda-recovered/bin/python` directly and pins `MPLCONFIGDIR` to a repository-local cache so `matplotlib` does not rebuild fonts into a random user cache directory on first run.
-`setup_conda_env.sh` keeps `Python 3.11` in conda, but installs `PySide6` from pip wheels so the expected `PySide6/Qt/plugins` layout exists on macOS.
+`setup_conda_env.sh` keeps `Python 3.11` in conda and prefers a locally installed `PySide6 6.10.x` when one already exists; otherwise it falls back to pip wheels. That keeps the expected `PySide6/Qt/plugins` layout on macOS, avoids the older Cocoa plugin startup aborts we saw with `6.7.x`, and reduces repeated multi-hundred-megabyte downloads.
 
 For a reproducible startup smoke test that auto-quits after a short delay:
 

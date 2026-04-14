@@ -27,7 +27,7 @@
 ## 快速开始
 
 建议优先使用仓库内的 `conda` 环境。
-这套脚本会用 `conda` 提供 `Python 3.11`，再用 `pip wheel` 安装 `PySide6`，以避开 macOS 上 conda 版 Qt plugin 的启动问题。
+这套脚本会用 `conda` 提供 `Python 3.11`，并优先复用本机已有的 `PySide6 6.10.x`；如果没有，再走 `pip` 安装。这样可以避开 macOS 上旧版 Qt/Cocoa plugin 组合的启动问题，也能减少重复下载超大的 Qt wheel。
 
 ```bash
 ./tools/setup_conda_env.sh
