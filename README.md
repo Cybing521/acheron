@@ -27,11 +27,14 @@
 ## 快速开始
 
 建议优先使用仓库内的 `conda` 环境。
+这套脚本会用 `conda` 提供 `Python 3.11`，再用 `pip wheel` 安装 `PySide6`，以避开 macOS 上 conda 版 Qt plugin 的启动问题。
 
 ```bash
 ./tools/setup_conda_env.sh
 ./tools/run_recovered_app.sh mondo --probe-import
 ./tools/run_recovered_app.sh acheron --probe-import
+./tools/run_smoke_qt_app.sh mondo
+./tools/run_smoke_qt_app.sh acheron
 ```
 
 也可以继续使用手动环境方式。建议使用 `Python 3.11`。

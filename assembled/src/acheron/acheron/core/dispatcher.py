@@ -220,8 +220,10 @@ class Dispatcher(QtCore.QObject):
 
     def join(self):
         self.final_join.set()
-        self.background_connect_thread.join()
-        self.background_join_thread.join()
+        if self.background_connect_thread.ident is not None:
+            self.background_connect_thread.join()
+        if self.background_join_thread.ident is not None:
+            self.background_join_thread.join()
         self.connectivity_manager.join()
         self.event_uploader.join()
 

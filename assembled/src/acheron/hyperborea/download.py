@@ -25,28 +25,10 @@ class _Fetcher(QtCore.QObject):
 
     error = QtCore.Signal(str)
 
-    def __init__(self, logger, extra):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 COPY_FREE_VARS
-        #    2 RESUME
-        #    4 LOAD_GLOBAL NULL + super
-        #   16 PRECALL
-        #   20 CALL
-        #   30 LOAD_METHOD __init__
-        #   52 PRECALL
-        #   56 CALL
-        #   66 POP_TOP
-        #   68 LOAD_FAST logger
-        #   70 LOAD_FAST self
-        #   72 STORE_ATTR logger
-        #   82 LOAD_FAST extra
-        #   84 LOAD_FAST self
-        #   86 STORE_ATTR extra
-        #   96 LOAD_CONST None
-        #   98 RETURN_VALUE
-        pass
+    def __init__(self, logger, extra=None):
+        super().__init__()
+        self.logger = logger
+        self.extra = extra
 
     def start(self, url, log_type):
         self.request_thread = threading.Thread(target = self.request_thread_run, args = (url, log_type))
@@ -146,24 +128,8 @@ class FirmwareFinder(QtCore.QObject):
     error = QtCore.Signal(str)
 
     def __init__(self, logger):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 COPY_FREE_VARS
-        #    2 RESUME
-        #    4 LOAD_GLOBAL NULL + super
-        #   16 PRECALL
-        #   20 CALL
-        #   30 LOAD_METHOD __init__
-        #   52 PRECALL
-        #   56 CALL
-        #   66 POP_TOP
-        #   68 LOAD_FAST logger
-        #   70 LOAD_FAST self
-        #   72 STORE_ATTR logger
-        #   82 LOAD_CONST None
-        #   84 RETURN_VALUE
-        pass
+        super().__init__()
+        self.logger = logger
 
     def find_firmware(self, build_type, board_info, repo, branch, commit):
         keys = []
@@ -242,24 +208,8 @@ class SoftwareFinder(QtCore.QObject):
     error = QtCore.Signal(str)
 
     def __init__(self, logger):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 COPY_FREE_VARS
-        #    2 RESUME
-        #    4 LOAD_GLOBAL NULL + super
-        #   16 PRECALL
-        #   20 CALL
-        #   30 LOAD_METHOD __init__
-        #   52 PRECALL
-        #   56 CALL
-        #   66 POP_TOP
-        #   68 LOAD_FAST logger
-        #   70 LOAD_FAST self
-        #   72 STORE_ATTR logger
-        #   82 LOAD_CONST None
-        #   84 RETURN_VALUE
-        pass
+        super().__init__()
+        self.logger = logger
 
     def find_software(self, repo, build_key, branch, commit):
         base_url = 'https://api.suprocktech.com/software/findsoftware'
@@ -370,49 +320,11 @@ class RefFinder(QtCore.QObject):
     error = QtCore.Signal(str)
 
     def __init__(self, logger):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 COPY_FREE_VARS
-        #    2 RESUME
-        #    4 LOAD_GLOBAL NULL + super
-        #   16 PRECALL
-        #   20 CALL
-        #   30 LOAD_METHOD __init__
-        #   52 PRECALL
-        #   56 CALL
-        #   66 POP_TOP
-        #   68 LOAD_FAST logger
-        #   70 LOAD_FAST self
-        #   72 STORE_ATTR logger
-        #   82 LOAD_GLOBAL NULL + _Fetcher
-        #   94 LOAD_FAST self
-        #   96 LOAD_ATTR logger
-        #  106 PRECALL
-        #  110 CALL
-        #  120 LOAD_FAST self
-        #  122 STORE_ATTR fetcher
-        #  132 LOAD_FAST self
-        #  134 LOAD_ATTR fetcher
-        #  144 LOAD_ATTR error
-        #  154 LOAD_METHOD connect
-        #  176 LOAD_FAST self
-        #  178 LOAD_ATTR error
-        #  188 PRECALL
-        #  192 CALL
-        #  202 POP_TOP
-        #  204 LOAD_FAST self
-        #  206 LOAD_ATTR fetcher
-        #  216 LOAD_ATTR completed
-        #  226 LOAD_METHOD connect
-        #  248 LOAD_FAST self
-        #  250 LOAD_ATTR completed
-        #  260 PRECALL
-        #  264 CALL
-        #  274 POP_TOP
-        #  276 LOAD_CONST None
-        #  278 RETURN_VALUE
-        pass
+        super().__init__()
+        self.logger = logger
+        self.fetcher = _Fetcher(self.logger)
+        self.fetcher.error.connect(self.error)
+        self.fetcher.completed.connect(self.completed)
 
     def get_software_refs(self, repo):
         base_url = 'https://api.suprocktech.com/software/findsoftware'
@@ -448,24 +360,8 @@ class Downloader(QtCore.QObject):
     error = QtCore.Signal(object, str)
 
     def __init__(self, logger):
-        # TODO: pycdc could not reconstruct this body.
-        # Signature was recovered from the code object; default values may need manual repair.
-        # Bytecode excerpt:
-        #    0 COPY_FREE_VARS
-        #    2 RESUME
-        #    4 LOAD_GLOBAL NULL + super
-        #   16 PRECALL
-        #   20 CALL
-        #   30 LOAD_METHOD __init__
-        #   52 PRECALL
-        #   56 CALL
-        #   66 POP_TOP
-        #   68 LOAD_FAST logger
-        #   70 LOAD_FAST self
-        #   72 STORE_ATTR logger
-        #   82 LOAD_CONST None
-        #   84 RETURN_VALUE
-        pass
+        super().__init__()
+        self.logger = logger
 
     def start_download(self, url, file):
         self.download_thread = threading.Thread(target = self.download_thread_run, args = (url, file))

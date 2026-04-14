@@ -15,7 +15,7 @@ import diskcache
 from PySide6 import QtCore, QtGui, QtSvgWidgets, QtWidgets
 import asphodel
 from hyperborea.dark_mode import set_style
-import hyperborea.download as hyperborea
+import hyperborea.download as download
 from .. import build_info
 from ..core.dispatcher import Dispatcher
 from ..core.device_controller import DeviceController
@@ -211,10 +211,10 @@ class PlotMainWindow(Ui_PlotMainWindow, QtWidgets.QMainWindow):
         self.tabWidget.currentChanged.connect(self.current_tab_changed_cb)
         self.treeWidget.itemDoubleClicked.connect(self.tree_item_double_clicked)
         self.actionDownloadFirmware.triggered.connect(self.download_firmware)
-        self.firmware_finder = hyperborea.download.FirmwareFinder(logger)
+        self.firmware_finder = download.FirmwareFinder(logger)
         self.firmware_finder.completed.connect(self.firmware_finder_completed)
         self.firmware_finder.error.connect(self.firmware_finder_error)
-        self.firmware_downloader = hyperborea.download.Downloader(logger)
+        self.firmware_downloader = download.Downloader(logger)
         self.firmware_downloader.update.connect(self.update_progress_cb)
         self.firmware_downloader.completed.connect(self.firmware_download_completed)
         self.firmware_downloader.error.connect(self.firmware_download_error)
@@ -222,13 +222,13 @@ class PlotMainWindow(Ui_PlotMainWindow, QtWidgets.QMainWindow):
         self.actionUpdateCurrentBranch.triggered.connect(self.update_current_branch)
         self.actionUpdateSpecificBranch.triggered.connect(self.update_specific_branch)
         self.actionUpdateSpecificCommit.triggered.connect(self.update_specific_commit)
-        self.software_finder = hyperborea.download.SoftwareFinder(logger)
+        self.software_finder = download.SoftwareFinder(logger)
         self.software_finder.completed.connect(self.update_finder_completed)
         self.software_finder.error.connect(self.update_finder_error)
-        self.ref_finder = hyperborea.download.RefFinder(logger)
+        self.ref_finder = download.RefFinder(logger)
         self.ref_finder.completed.connect(self.ref_finder_completed)
         self.ref_finder.error.connect(self.ref_finder_error)
-        self.software_downloader = hyperborea.download.Downloader(logger)
+        self.software_downloader = download.Downloader(logger)
         self.software_downloader.update.connect(self.update_progress_cb)
         self.software_downloader.completed.connect(self.software_download_completed)
         self.software_downloader.error.connect(self.software_download_error)

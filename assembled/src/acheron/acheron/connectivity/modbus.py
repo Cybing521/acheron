@@ -649,8 +649,11 @@ class ModbusHandler:
         self._stop_modbus()
 
     def join(self):
-        if not self.stopped:
+        if getattr(self, 'stopped', True):
+            return None
+        if hasattr(self, '_stop_modbus'):
             self.stop()
+        return None
 
     def stop_device(self, serial_number):
         self.slave.remove_device_mapping(serial_number)

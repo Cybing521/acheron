@@ -24,7 +24,7 @@ import pyqtgraph
 import asphodel
 from asphodel import ChannelCalibration
 from asphodel.device_info import DeviceInfo
-import hyperborea.download as hyperborea
+import hyperborea.download as download
 from hyperborea.unit_preferences import get_default_option, get_unit_options, UnitOption
 from hyperborea.device_info_dialog import DeviceInfoDialog
 from ..calc_process.types import ChannelInformation, LimitType
@@ -443,13 +443,13 @@ class DeviceTab(Ui_DeviceTab, QtWidgets.QWidget):
         self.controller.trigger_count_changed.connect(self.schedule_or_trigger_count_updated)
         self.controller.schedule_count_changed.connect(self.schedule_or_trigger_count_updated)
         self.controller.active_triggers_changed.connect(self.active_triggers_changed_cb)
-        self.firmware_finder = hyperborea.download.FirmwareFinder(self.logger)
+        self.firmware_finder = download.FirmwareFinder(self.logger)
         self.firmware_finder.completed.connect(self.firmware_finder_completed)
         self.firmware_finder.error.connect(self.firmware_finder_error)
-        self.ref_finder = hyperborea.download.RefFinder(self.logger)
+        self.ref_finder = download.RefFinder(self.logger)
         self.ref_finder.completed.connect(self.ref_finder_completed)
         self.ref_finder.error.connect(self.ref_finder_error)
-        self.downloader = hyperborea.download.Downloader(self.logger)
+        self.downloader = download.Downloader(self.logger)
         self.downloader.completed.connect(self.download_completed)
         self.downloader.error.connect(self.download_error)
         self.downloader.update.connect(self.download_update_progress)
