@@ -8,7 +8,7 @@
 
 - `Mondo` 已经可以通过恢复启动器完整导入到 GUI 入口模块。
 - `Acheron` 也已经清理掉主要的旧冻结版裸导入，能完整导入到 `acheron.gui.__main__`。
-- 当前这台 macOS + Homebrew Python 环境里，真正创建 `QApplication` 时仍会卡在 Qt platform plugin 装载，属于运行环境问题，不再是源码导入链报错。
+- 当前仓库已经补了一套本机 `conda` 运行环境，规避了 macOS + Homebrew Python 上的 Qt platform plugin 问题。
 - 仓库目前以“本地恢复、继续修复、后续自行重编译”为目标，暂不生成 exe。
 
 ## 目录说明
@@ -26,7 +26,15 @@
 
 ## 快速开始
 
-建议使用 `Python 3.11`。
+建议优先使用仓库内的 `conda` 环境。
+
+```bash
+./tools/setup_conda_env.sh
+./tools/run_recovered_app.sh mondo --probe-import
+./tools/run_recovered_app.sh acheron --probe-import
+```
+
+也可以继续使用手动环境方式。建议使用 `Python 3.11`。
 
 ```bash
 python3.11 -m venv .venv-recovered

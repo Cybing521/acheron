@@ -33,6 +33,20 @@ To actually launch:
 
 The bootstrap helper also configures `QT_PLUGIN_PATH`, `QT_QPA_PLATFORM_PLUGIN_PATH`, and `DYLD_FRAMEWORK_PATH` (on macOS) from the installed `PySide6` wheel so the GUI runtime can find its Qt platform plugins.
 
+## Recommended Local macOS Setup
+
+If the Homebrew/PyPI stack still fails on macOS because Qt cannot initialize a platform plugin, use the repository-local conda environment instead:
+
+```bash
+./tools/setup_conda_env.sh
+./tools/run_recovered_app.sh mondo --probe-import
+./tools/run_recovered_app.sh acheron --probe-import
+./tools/run_recovered_app.sh mondo
+./tools/run_recovered_app.sh acheron
+```
+
+`run_recovered_app.sh` uses `.conda-recovered/bin/python` directly and pins `MPLCONFIGDIR` to a repository-local cache so `matplotlib` does not rebuild fonts into a random user cache directory on first run.
+
 ## Runtime Assets
 
 The original installers ship a few non-Python runtime assets that are not embedded in the recovered source tree:

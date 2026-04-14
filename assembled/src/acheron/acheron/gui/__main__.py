@@ -55,7 +55,7 @@ def main():
     app.setWindowIcon(icon)
     app.setApplicationVersion(__version__)
     app.setStyleSheet('QMessageBox { messagebox-text-interaction-flags: 5; }')
-    setup_logging()
+    setup_logging(False)
     create_empty_settings()
     logger.info('Acheron started (Version {})'.format(__version__))
 
