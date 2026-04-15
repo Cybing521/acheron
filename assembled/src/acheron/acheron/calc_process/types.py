@@ -26,6 +26,8 @@ class ChannelInformation:
 
     channel: AsphodelChannelInfo
 
+    subchannel_names: Any
+
     rate_info: StreamRateInfo
 
     samples: int
